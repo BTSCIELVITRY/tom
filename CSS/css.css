@@ -1,0 +1,496 @@
+@font-face {
+    font-family: "Horizon";
+    src: url("font/Horizon-updated/NEW UPDATED VERSION/horizon.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Poppins Medium";
+    src: url("font/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins SemiBold";
+    src: url("font/poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+    /* Assure que la hauteur du body et du html est égale à celle de la fenêtre */
+    margin: 0;
+    /* Supprime la marge par défaut */
+    padding: 0;
+    /* Supprime le padding par défaut */
+    overflow: hidden;
+    /* Cache toute barre de défilement */
+}
+
+body {
+    background-color: #5eb090;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Centrer les éléments verticalement et horizontalement */
+}
+
+.titre {
+    font-size: 90px;
+    color: #fffcf6;
+    font-family: "Horizon";
+    position: absolute;
+    left: 17px;
+    top: -55px;
+}
+
+/* styles boutons ovales */
+.oval-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    color: #fffcf6;
+    border: 2px solid #fffcf6bd;
+    border-radius: 50%;
+    font-family: "Poppins SemiBold";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* position boutons */
+.music {
+    left: 23%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.computer {
+    right: 23%;
+    bottom: 60%;
+    transform: translate(50%, 50%);
+}
+
+.contact {
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 50%);
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.oval-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fffcf6;
+}
+
+.footer {
+    position: fixed; /* Positionnement fixe */
+    bottom: 0;       /* Collé en bas de l'écran */
+    right: 0;         /* Collé à gauche de l'écran */
+    background-color: #fffcf6; /* Couleur de fond */
+    color: #5eb090;     /* Couleur du texte */
+    padding: 10px 15px; /* Espacement interne */
+    font-size: 10px; /* Taille du texte */
+    font-family: Arial, sans-serif; /* Police */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    border-top-left-radius: 8px; /* Coin arrondi en haut à droite */
+  }
+  
+  .footer p {
+    margin: 0; /* Supprime les marges internes du texte */
+    font-family: "Horizon";
+  }
+  
+  .footer a {
+    color: #0d6efd; /* Couleur des liens */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  
+  
+
+  /* contact */
+
+  .contact-form {
+    background-color: #fffcf6;
+    border-radius: 8px;
+    padding: 35px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: "Poppins Medium";
+    color: #5eb090;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-family: "Horizon";
+    margin-bottom: 15px;
+    color: #5eb090;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #5eb090;
+    border-radius: 5px;
+    font-family: "Poppins Medium";
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5eb090cc;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #5eb090;
+    color: #fffcf6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Poppins SemiBold";
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4a9078;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between; /* Ajoute un espace entre les checkboxes */
+    align-items: center; /* Aligne les checkboxes verticalement */
+    margin-bottom: 15px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center; /* Aligne le texte et la checkbox verticalement */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px; /* Ajoute un espace entre la case et le texte */
+    transform: scale(1.2); /* Agrandit légèrement les cases */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .contact-form {
+        background-color: #fffcf6;
+        border-radius: 8px;
+        padding: 25px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        height: 70%;
+        max-width: 500px;
+        margin: 20px auto;
+        font-family: "Poppins Medium";
+        color: #5eb090;
+    }
+    .contact-form h2 {
+        text-align: center;
+        font-family: "Horizon";
+        margin-bottom: 5px;
+        color: #5eb090;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin: 5px 0 5px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+        padding: 6px;
+        margin-bottom: 1px;
+        border: 2px solid #5eb090;
+        border-radius: 5px;
+        font-family: "Poppins Medium";
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #5eb090cc;
+        outline: none;
+    }
+    
+    .contact-form button {
+        background-color: #5eb090;
+        color: #fffcf6;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: "Poppins SemiBold";
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+    }
+    
+    .contact-form button:hover {
+        background-color: #4a9078;
+    }
+    
+    .checkbox-group {
+        display: flex;
+        justify-content: space-between; /* Ajoute un espace entre les checkboxes */
+        align-items: center; /* Aligne les checkboxes verticalement */
+        margin-bottom: 15px;
+    }
+    
+    .checkbox-group div {
+        display: flex;
+        align-items: center; /* Aligne le texte et la checkbox verticalement */
+    }
+    
+    .checkbox-group input[type="checkbox"] {
+        margin-right: 8px; /* Ajoute un espace entre la case et le texte */
+        transform: scale(1.2); /* Agrandit légèrement les cases */
+        cursor: pointer;
+    }
+    
+    .titre {
+        font-size: 55px;
+        color: #fffcf6;
+        font-family: "Horizon";
+        position: flex;
+        align-items: center;
+        top: -30px;
+        
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .contact-form {
+    background-color: #fffcf6;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    height: 68%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: "Poppins Medium";
+    color: #5eb090;
+}
+.contact-form h2 {
+    text-align: center;
+    font-family: "Horizon";
+    margin-bottom: 5px;
+    color: #5eb090;
+}
+
+.contact-form label {
+    display: block;
+    margin: 5px 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.moititre{
+    font-size: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 6px;
+    margin-bottom: 1px;
+    border: 2px solid #5eb090;
+    border-radius: 5px;
+    font-family: "Poppins Medium";
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #5eb090cc;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #5eb090;
+    color: #fffcf6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Poppins SemiBold";
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4a9078;
+}
+
+#message {
+    height: 50px;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-between; /* Ajoute un espace entre les checkboxes */
+    align-items: center; /* Aligne les checkboxes verticalement */
+    margin-bottom: 15px;
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center; /* Aligne le texte et la checkbox verticalement */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px; /* Ajoute un espace entre la case et le texte */
+    transform: scale(1.2); /* Agrandit légèrement les cases */
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed; /* Positionnement fixe */
+    bottom: 0;       /* Collé en bas de l'écran */
+    right: 0;         /* Collé à gauche de l'écran */
+    background-color: #fffcf6; /* Couleur de fond */
+    color: #5eb090;     /* Couleur du texte */
+    padding: 10px 15px; /* Espacement interne */
+    font-size: 10px; /* Taille du texte */
+    font-family: Arial, sans-serif; /* Police */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    border-top-left-radius: 8px; /* Coin arrondi en haut à droite */
+  }
+  
+  .footer p {
+    margin: 0; /* Supprime les marges internes du texte */
+    font-family: "Horizon";
+  }
+  
+  .footer a {
+    color: #0d6efd; /* Couleur des liens */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+  
+
+.titre {
+    font-size: 50px;
+    color: #fffcf6;
+    font-family: "Horizon";
+    position: flex;
+    align-items: center;
+    top: -30px;
+    
+}
+body {
+    background-color: #5eb090;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Centrer les éléments verticalement et horizontalement */
+}
+.oval-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    color: #fffcf6;
+    border: 2px solid #fffcf6bd;
+    border-radius: 50%;
+    font-family: "Poppins SemiBold";
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* position boutons */
+.music {
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.computer {
+    right: 50%;
+    bottom: 65%;
+    transform: translate(50%, 50%);
+}
+
+.contact {
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, 50%);
+    width: 250px;
+    height: 70px;
+    font-size: 20px;
+}
+
+.oval-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fffcf6;
+}
+
+.footer {
+    position: fixed; /* Positionnement fixe */
+    bottom: 0;       /* Collé en bas de l'écran */
+    right: 0;         /* Collé à gauche de l'écran */
+    background-color: #fffcf6; /* Couleur de fond */
+    color: #5eb090;     /* Couleur du texte */
+    padding: 10px 15px; /* Espacement interne */
+    font-size: 10px; /* Taille du texte */
+    font-family: Arial, sans-serif; /* Police */
+    z-index: 1000; /* Toujours au-dessus des autres éléments */
+    border-top-left-radius: 8px; /* Coin arrondi en haut à droite */
+  }
+  
+  .footer p {
+    margin: 0; /* Supprime les marges internes du texte */
+    font-family: "Horizon";
+  }
+  
+  .footer a {
+    color: #0d6efd; /* Couleur des liens */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+  }
+}

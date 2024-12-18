@@ -1,0 +1,941 @@
+@font-face {
+  font-family: "Horizon";
+  src: url("font/Horizon-updated/NEW UPDATED VERSION/horizon.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("font/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("font/poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Righteous";
+  src: url("font/Righteous-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: #3c6ca8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  field-sizing: content;
+}
+
+.navbar {
+  background-color: #fffcf6;
+  overflow: visible;
+  padding: 10px 20px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  field-sizing: content;
+}
+
+.titre {
+  font-size: 45px;
+  color: #3c6ca8;
+  font-family: "Horizon";
+  text-decoration: none;
+  background-color: transparent;
+  field-sizing: content;
+}
+
+/* Style de la liste */
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 1;
+  display: flex;
+  gap: 100px;
+}
+
+.menu-list li a {
+  color: #3c6ca8;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  font-family: "Poppins Medium";
+}
+
+.menu-list li a:hover {
+  background-color: #3c6ca8;
+  color: #fffcf6;
+  border-radius: 5px;
+}
+
+/* Styles pour dropdown */
+.dropdown {
+  position: relative;
+  z-index: 1001;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fffcf6;
+  color: #3c6ca8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #476283;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #3c6ca8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #3c6ca8;
+  color: #fffcf6;
+  border-radius: 5px;
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mise en page de la section resume */
+.resume {
+  display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+
+.image-cell {
+  padding: 20px;
+  
+}
+
+.text-cell {
+  padding: 20px;
+}
+
+.pptyngaa {
+  max-width: 150px;
+    height: auto;
+    border-radius: 100%; /* Arrondi pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+.aboutme {
+  color: #ffffff;
+  font-family: "Poppins medium";
+  font-size: 22px;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  line-height: 1.5;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #83a1c7, #173b66);
+  border-radius: 15px; 
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+}
+.aboutme p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* PAGE CD */
+.les3cd {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.les3cd input[type="image"] {
+  max-width: 250px;
+  height: auto;
+  cursor: pointer;
+}
+
+.composants {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cd-item {
+  text-align: center;
+}
+
+.composants input[type="image"] {
+  max-width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.cd-text {
+  color: #ffffff;
+  font-family: "Poppins Medium";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cdprice {
+  color: #ffffff;
+  font-family: "Poppins Medium";
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  /* Enlève soulignement lien */
+}
+
+.nsndaccd {
+  transition: transform 0.3s ease;
+  /* Applique une transition fluide au zoom */
+  transform-origin: center center;
+  /* Le zoom se fait depuis le centre de l'image */ 
+}
+
+
+.oakaccd {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.sm2accd {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.nsndaccd:hover {
+  transform: scale(1.1);
+}
+
+.oakaccd:hover {
+  transform: scale(1.1);
+}
+
+.sm2accd:hover {
+  transform: scale(1.1);
+}
+
+.addpanier {
+  background-color: #00387d;
+  /* Couleur violet */
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  /* Supprime la bordure */
+  padding: 10px 20px;
+  /* Espacement interne (haut-bas et gauche-droite) */
+  font-size: 16px;
+  /* Taille de la police */
+  border-radius: 25px;
+  /* Arrondi des coins */
+  cursor: pointer;
+  /* Changer le curseur en pointeur au survol */
+  transition: background-color 0.3s ease;
+  /* Transition douce pour la couleur de fond */
+  
+}
+
+.addpanier:hover {
+  background-color: #62a1ed;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE NSND 2 */
+
+.nsndclass {
+  display: flex;
+  /* Utilise Flexbox pour disposer les éléments horizontalement */
+  align-items: center;
+  /* Aligne verticalement les éléments au centre */
+  gap: 50px;
+  /* Ajoute un espace entre l'image et le texte */
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+.imagensnd {
+  max-width: 550px;
+  /* Taille maximale de l'image */
+  height: auto;
+  /* Garder la proportion de l'image */
+  display: block;
+  /* Assure un comportement de bloc */
+}
+
+.textnsnd {
+  display: flex;
+  /* Utilise Flexbox pour disposer les éléments verticalement */
+  flex-direction: column;
+  /* Les éléments sont disposés en colonne */
+  justify-content: space-between;
+  /* Distribue l'espace verticalement */
+  align-items: center;
+  /* Centre horizontalement tous les éléments à l'intérieur */
+  height: 100%;
+  /* Utilise toute la hauteur disponible */
+  text-align: center;
+  /* Centre le texte à l'intérieur de chaque élément */
+  font-family: "Poppins Medium";
+}
+
+.titrealbum {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: -15px;
+  /* Réduit l'espace entre le titre et le prix */
+  font-family: "Horizon";
+  text-align: center;
+}
+
+.prixalbum {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.aboutalbum {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+  /* Permet au texte de se casser sur plusieurs lignes */
+  line-height: 1.5;
+  /* Ajuste la hauteur des lignes pour plus de lisibilité */
+  max-width: 500px;
+  /* Limite la largeur du texte pour éviter qu'il ne s'étende trop */
+}
+
+.addpaniernsnd {
+  background-color: #5C8CF5;
+  /* Couleur violet */
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpaniernsnd:hover {
+  background-color: #7EDDF5;
+  /* Couleur plus foncée au survol */
+}
+
+.spotifycd{
+  margin-top: -100px;
+}
+
+/* PAGE oak */
+
+.addpanieroak {
+  background-color: #239b08;
+  color: #fff;
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpanieroak:hover {
+  background-color: #b2dfb9;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE SM2 */
+
+.addpaniersm2 {
+  background-color: #ba5d69;
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpaniersm2:hover {
+  background-color: #daa898;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE plateformes */
+
+.txtpltfrm {
+  color: #ffffff;
+  font-family: "Horizon";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.plateformes {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  
+}
+
+.cd-item {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* L'élément est invisible au début */
+  }
+
+  100% {
+    opacity: 1;
+    /* L'élément devient visible à la fin de l'animation */
+  }
+}
+
+.footer {
+  position: fixed; /* Positionnement fixe */
+  bottom: 0;       /* Collé en bas de l'écran */
+  right: 0;         /* Collé à gauche de l'écran */
+  background-color: #fffcf6; /* Couleur de fond */
+  color: #3C6CA8;     /* Couleur du texte */
+  padding: 10px 15px; /* Espacement interne */
+  font-size: 10px; /* Taille du texte */
+  font-family: Arial, sans-serif; /* Police */
+  z-index: 1000; /* Toujours au-dessus des autres éléments */
+  border-top-left-radius: 8px; /* Coin arrondi en haut à droite */
+}
+
+.footer p {
+  margin: 0; /* Supprime les marges internes du texte */
+  font-family: "Horizon";
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+.keyworld {
+  position: fixed; /* Positionnement fixe */
+  bottom: 0;       /* Collé en bas de l'écran */
+  left: 0;         /* Collé à gauche de l'écran */
+  background-color: #fffcf6; /* Couleur de fond */
+  color: #3C6CA8;     /* Couleur du texte */
+  padding: 10px 15px; /* Espacement interne */
+  font-size: 12px; /* Taille du texte */
+  font-family: Arial, sans-serif; /* Police */
+  z-index: 1000; /* Toujours au-dessus des autres éléments */
+  border-top-right-radius: 8px; /* Coin arrondi en haut à droite */
+}
+
+.keyworld p {
+  margin: 0; /* Supprime les marges internes du texte */
+  font-family: "Horizon";
+}
+
+.keyworld a {
+  text-decoration: underline;
+  color: #3C6CA8; 
+}
+
+.keyworld a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+.keyyy{
+  font-family: "Righteous";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-color: #3c6ca8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #fffcf6;
+    overflow: visible;
+    padding: 10px 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .titre {
+    font-size: 15px;
+    color: #3c6ca8;
+    font-family: "Horizon";
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 1;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .menu-list li a {
+    color: #3c6ca8;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+    font-family: "Poppins Medium";
+  }
+  
+  .menu-list li a:hover {
+    background-color: #3c6ca8;
+    color: #fffcf6;
+    border-radius: 5px;
+  }
+  /* Styles pour dropdown */
+.dropdown {
+  position: relative;
+  z-index: 1001;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fffcf6;
+  color: #3c6ca8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #476283;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-content a {
+  color: #3c6ca8;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #3c6ca8;
+  color: #fffcf6;
+  border-radius: 5px;
+}
+
+/* Afficher le sous-menu au survol */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Mise en page de la section resume */
+.resume {
+  display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+
+.image-cell {
+  padding: 20px;
+  
+}
+
+.text-cell {
+  padding: 20px;
+}
+
+.pptyngaa {
+  max-width: 100px;
+    height: auto;
+    border-radius: 100%; /* Arrondi pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+}
+
+.aboutme {
+  color: #ffffff;
+  font-family: "Poppins medium";
+  font-size: 20px;
+  padding: 10px 15px;
+  word-wrap: break-word;
+  line-height: 1.5;
+  max-width: 1000px;
+  background: linear-gradient(135deg, #83a1c7, #173b66);
+  border-radius: 15px; 
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  text-align: center;
+}
+.aboutme p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* PAGE CD */
+.les3cd {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.les3cd input[type="image"] {
+  max-width: 70px;
+  height: auto;
+  cursor: pointer;
+}
+
+.composants {
+  display: flex;
+  justify-content: center;
+  gap: 10px
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cd-item {
+  text-align: center;
+}
+
+.composants input[type="image"] {
+  max-width: 80px;
+  height: auto;
+  cursor: pointer;
+}
+
+.cd-text {
+  color: #ffffff;
+  font-family: "Poppins Medium";
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.cdprice {
+  color: #ffffff;
+  font-family: "Poppins Medium";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  /* Enlève soulignement lien */
+}
+
+.nsndaccd {
+  transition: transform 0.3s ease;
+  /* Applique une transition fluide au zoom */
+  transform-origin: center center;
+  /* Le zoom se fait depuis le centre de l'image */ 
+}
+
+
+.oakaccd {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.sm2accd {
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.nsndaccd:hover {
+  transform: scale(1.1);
+}
+
+.oakaccd:hover {
+  transform: scale(1.1);
+}
+
+.sm2accd:hover {
+  transform: scale(1.1);
+}
+
+.addpanier {
+  background-color: #00387d;
+  /* Couleur violet */
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  /* Supprime la bordure */
+  padding: 10px 20px;
+  /* Espacement interne (haut-bas et gauche-droite) */
+  font-size: 16px;
+  /* Taille de la police */
+  border-radius: 25px;
+  /* Arrondi des coins */
+  cursor: pointer;
+  /* Changer le curseur en pointeur au survol */
+  transition: background-color 0.3s ease;
+  /* Transition douce pour la couleur de fond */
+  
+}
+
+.addpanier:hover {
+  background-color: #62a1ed;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE NSND 2 */
+
+.nsndclass {
+  display: flex;
+  /* Utilise Flexbox pour disposer les éléments horizontalement */
+  align-items: center;
+  /* Aligne verticalement les éléments au centre */
+  gap: 20px;
+  /* Ajoute un espace entre l'image et le texte */
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+
+.imagensnd {
+  max-width: 550px;
+  /* Taille maximale de l'image */
+  height: auto;
+  /* Garder la proportion de l'image */
+  display: block;
+  /* Assure un comportement de bloc */
+}
+
+.textnsnd {
+  display: flex;
+  /* Utilise Flexbox pour disposer les éléments verticalement */
+  flex-direction: column;
+  /* Les éléments sont disposés en colonne */
+  justify-content: space-between;
+  /* Distribue l'espace verticalement */
+  align-items: center;
+  /* Centre horizontalement tous les éléments à l'intérieur */
+  height: 100%;
+  /* Utilise toute la hauteur disponible */
+  text-align: center;
+  /* Centre le texte à l'intérieur de chaque élément */
+  font-family: "Poppins Medium";
+}
+
+.titrealbum {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: -15px;
+  /* Réduit l'espace entre le titre et le prix */
+  font-family: "Horizon";
+  text-align: center;
+}
+
+.prixalbum {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.aboutalbum {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+  /* Permet au texte de se casser sur plusieurs lignes */
+  line-height: 1.5;
+  /* Ajuste la hauteur des lignes pour plus de lisibilité */
+  max-width: 500px;
+  /* Limite la largeur du texte pour éviter qu'il ne s'étende trop */
+}
+
+.addpaniernsnd {
+  background-color: #5C8CF5;
+  /* Couleur violet */
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpaniernsnd:hover {
+  background-color: #7EDDF5;
+  /* Couleur plus foncée au survol */
+}
+
+.spotifycd{
+  margin-top: -100px;
+}
+
+/* PAGE oak */
+
+.addpanieroak {
+  background-color: #239b08;
+  color: #fff;
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpanieroak:hover {
+  background-color: #b2dfb9;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE SM2 */
+
+.addpaniersm2 {
+  background-color: #ba5d69;
+  color: #fff;
+  /* Texte blanc */
+  font-family: "Poppins Medium";
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Assure que le bouton se place en bas */
+}
+
+.addpaniersm2:hover {
+  background-color: #daa898;
+  /* Couleur plus foncée au survol */
+}
+
+/* PAGE plateformes */
+
+.txtpltfrm {
+  color: #ffffff;
+  font-family: "Horizon";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.plateformes {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  flex-wrap: wrap;
+  
+}
+
+.cd-item {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    /* L'élément est invisible au début */
+  }
+
+  100% {
+    opacity: 1;
+    /* L'élément devient visible à la fin de l'animation */
+  }
+}
+
+.footer {
+  position: fixed; /* Positionnement fixe */
+  bottom: 0;       /* Collé en bas de l'écran */
+  right: 0;         /* Collé à gauche de l'écran */
+  background-color: #fffcf6; /* Couleur de fond */
+  color: #3C6CA8;     /* Couleur du texte */
+  padding: 10px 15px; /* Espacement interne */
+  font-size: 10px; /* Taille du texte */
+  font-family: Arial, sans-serif; /* Police */
+  z-index: 1000; /* Toujours au-dessus des autres éléments */
+  border-top-left-radius: 8px; /* Coin arrondi en haut à droite */
+}
+
+.footer p {
+  margin: 0; /* Supprime les marges internes du texte */
+  font-family: "Horizon";
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+
+
+}

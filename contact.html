@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="shortcut icon" type="image/png" href="FAVICONS/TVERT.png">
+    <title>TYNGAA</title>
+</head>
+
+<body>
+    <a href="index.html"><h1 class="titre">TYNGAA</h1></a>
+
+    <form class="contact-form" action="mailto:tom.leverd51@gmail.com" method="post">
+        <h2 class="moititre">Contactez-moi</h2>
+        <label for="Nom">Nom :</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+        <label for="Prénom">Prénom :</label>
+        <input type="text" id="surname" name="surname" placeholder="Votre prénom" required>
+
+        <label for="Email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+        <label for="Domaine">Domaine concerné :</label>
+        <div class="checkbox-group">
+            <div>
+                <input type="checkbox" id="musicbox" name="music">
+                <label for="">Music Store</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pcbox" name="pc">
+                <label for="">PC Store</label>
+            </div>
+        </div>
+
+        <label for="Demande">Demande :</label>
+        <textarea id="message" name="message" placeholder="Votre demande..." rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <footer class="footer">
+        <p>&copy; 2024 tyngaa.</p>
+    </footer>
+</body>
+
+</html>
